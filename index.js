@@ -13,4 +13,5 @@ let h = require('./testHelpers.js');
 //require('./codewars.js');
 console.log(h.assertCollectionEquality(["a","b"],['a',"b"]));
 h.assertCollectionEquality(["q"], ["a"]);
+console.log("Hello from macbook!");
 require('./problem.js');
