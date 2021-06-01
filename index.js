@@ -11,6 +11,6 @@ let h = require('./testHelpers.js');
 //require('./codewars2.js');
 //require('./hack_react_2.js');
 //require('./codewars.js');
-//require('./problem.js');
 console.log(h.assertCollectionEquality(["a","b"],['a',"b"]));
-//h.assertCollectionEquality("q", "a");
+h.assertCollectionEquality(["q"], ["a"]);
+require('./problem.js');

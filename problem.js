@@ -11,14 +11,13 @@ function generateSampleView(arr) {
     var addressAt = arr[i].address;
     var email = arr[i].email;
     if (arr[i].id % 2 === 1) {
-    	output.push(`${email}`);
+      output.push(`${email}`);
     } else {
       output.push(`${addressAt.street}, ${addressAt.suite}, ${addressAt.city}, ${addressAt.zipcode}`);
-    }	
+    }
   }
   return output;
 }
-
 
 /*
 
@@ -98,15 +97,15 @@ There are typically two things that we must check in order to determine that two
 console.log(generateSampleView(users));
 
 function generateSampleView2(arr) {
-  const helper = ({id: id,
-                   email: email,
-                   address: {
-                      street: street,
-                      suite: suite,
-                      city: city,
-                      zipcode: zipcode}}) =>
-    id % 2 == 1? email: `${street}, ${suite}, ${city}, ${zipcode}`;
-  return arr.map(helper);
-};
+  const helper = ({ id: id,
+    email: email,
+    address: {
+      street: street,
+      suite: suite,
+      city: city,
+      zipcode: zipcode } }) =>
+       id % 2 == 1 ? email : `${street}, ${suite}, ${city}, ${zipcode}`;
+    return arr.map(helper);
+}
 
 console.log(generateSampleView2(users));
